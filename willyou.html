@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>For You ❤️</title>
+  <link rel="stylesheet" href="/willyou.css" />
+</head>
+<body>
+  <div id="stage" class="stage">
+    <div id="card" class="card">
+      <header class="card-header">
+        <h1 id="title">For You, Vava</h1>
+        <p class="subtitle">A little surprise from me please open</p>
+      </header>
+
+      <main class="card-main">
+        <div id="cover" class="cover">
+          <!-- Replace the placeholder image URL with a photo or keep as-is -->
+          <img id="photo" alt="A little something" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=example" />
+          <button id="openBtn" class="cta">Open</button>
+        </div>
+
+        <div id="story" class="story hidden">
+          <div class="typing" id="typing"></div>
+
+          <div id="extras" class="extras hidden">
+            <p class="line">We laughed here. We talked there. I keep thinking about the way you how you smile.</p>
+            <p class="line">You make ordinary days feel special. I really like you, and I want something more.</p>
+            <div class="question">
+              <h2>Will you be my girlfriend?</h2>
+              <div class="buttons">
+                <button id="yesBtn" class="yes">Yes ❤️</button>
+                <button id="noBtn" class="no">No</button>
+              </div>
+            </div>
+          </div>
+
+          <div id="result" class="result hidden" aria-live="polite">
+            <!-- Filled dynamically -->
+          </div>
+        </div>
+      </main>
+
+      <footer class="card-footer">
+        <small>Made with care by Gabriel</small>
+      </footer>
+    </div>
+  </div>
+
+  <div id="confetti-container" class="confetti-container" aria-hidden="true"></div>
+
+  <script src="/willyou.js"></script>
+</body>
+</html>
